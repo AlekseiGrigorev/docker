@@ -1,0 +1,17 @@
+# https://log-viewer.opcodes.io/docs/3.x/
+# https://github.com/opcodesio/log-viewer
+# docker compose -f "docker-compose.opcodesio_log_viewer.yml" up -d --build
+# url: http://localhost:8000/log-viewer
+# login admin@email.com password: admin (see opcodesio_log_viewer.Dockerfile)
+
+version: '3.8'
+
+services:
+  opcodesio_log_viewer:
+    image: opcodesio_log_viewer
+    build:
+      dockerfile: ./docker/opcodesio_log_viewer/opcodesio_log_viewer.Dockerfile
+    volumes:
+      - ./storage/logs:/var/www/html/opcodesio_log_viewer/storage/logs/log_viewer
+    ports:
+      - '8000:8000'
