@@ -1,4 +1,4 @@
-# Container with an interface for viewing application logs
+# Container with an interface for viewing Laravel application logs
 
 ## Configured to read logs from the application directory storage/logs
 
@@ -9,6 +9,8 @@ See docker-compose.opcodesio_log_viewer.yml
 https://log-viewer.opcodes.io/docs/3.x/
 
 https://github.com/opcodesio/log-viewer
+
+https://packagist.org/packages/opcodesio/log-viewer
 
 ## Build and run
 
