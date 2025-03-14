@@ -1,0 +1,18 @@
+# https://hub.docker.com/r/phpdoc/phpdoc
+# docker-compose.phpdoc.yml
+# docker compose -f "docker-compose.phpdoc.yml" up -d --build
+
+# $ docker pull phpdoc/phpdoc
+# Interactive mode
+# $ docker run --rm -v c:/docker/phpdoc/data:/data -v c:/docker/phpdoc/app:/app -it --entrypoint sh phpdoc/phpdoc      
+# phpdoc --setting=graphs.enabled=true -d /app
+
+# $ docker exec -it phpdoc/phpdoc sh
+
+services:
+
+  phpdoc:
+    image: phpdoc/phpdoc
+    command: sh
+    volumes:
+      - ./phpdoc/data:/phpdoc/phpdoc

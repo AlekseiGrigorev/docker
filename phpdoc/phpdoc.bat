@@ -1,0 +1,1 @@
+docker run --rm -v ./data phpdoc/phpdoc   

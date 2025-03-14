@@ -1,0 +1,7 @@
+# docker compose -f "docker-compose.mydumper.yml" run --rm mydumper 
+services:
+  mydumper:
+    image: mydumper/mydumper
+    command: sh
+    volumes:
+      - ./mydumper/data:/backups
