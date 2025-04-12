@@ -1,13 +1,16 @@
 FROM php:8.4.2-fpm-alpine3.21
 
+RUN apk update
+RUN apk upgrade
+
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Insltall packages 
+# Install packages 
 RUN apk add mc 
 
-# Authorization
-RUN apk add sqlite nodejs npm
+# Install packages for Authorization
+RUN apk add sqlite sqlite-dev sqlite-libs nodejs npm
 
 RUN composer create-project laravel/laravel:11.5.0 opcodesio_log_viewer
 WORKDIR opcodesio_log_viewer
