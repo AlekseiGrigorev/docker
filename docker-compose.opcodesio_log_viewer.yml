@@ -5,8 +5,6 @@
 # url: http://localhost:8000/log-viewer
 # login admin@email.com password: admin (see opcodesio_log_viewer.Dockerfile)
 
-version: '3.8'
-
 services:
   opcodesio_log_viewer:
     image: opcodesio_log_viewer

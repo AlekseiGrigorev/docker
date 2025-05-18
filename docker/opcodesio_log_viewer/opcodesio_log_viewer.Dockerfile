@@ -7,7 +7,8 @@ RUN apk upgrade
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install packages 
-RUN apk add mc 
+RUN apk add mc
+RUN apk add ncdu
 
 # Install packages for Authorization
 RUN apk add sqlite sqlite-dev sqlite-libs nodejs npm

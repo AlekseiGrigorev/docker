@@ -1,0 +1,13 @@
+# docker-compose.phpmyadmin.yml
+# docker compose -f "docker-compose.phpmyadmin.yml" up -d --build
+# Use address of MySQL container like 172.18.0.2 (not localhost)
+
+services:
+  phpmyadmin:
+    build:
+      context: ./docker/phpmyadmin  # Dockerfile dir path
+      dockerfile: Dockerfile  # Dockerfile name (by default "Dockerfile")
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
