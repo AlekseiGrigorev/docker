@@ -1,0 +1,15 @@
+# docker-compose.clickhouse_23_12.yaml
+# docker compose -f "docker-compose.clickhouse_23_12.yaml" up -d --build
+
+services:
+  clickhouse_23_12:
+    # image: clickhouse/clickhouse-server:23.12-alpine
+    build:
+      context: ./clickhouse_23_12  # Dockerfile dir path
+      dockerfile: Dockerfile  # Dockerfile name (by default "Dockerfile")
+    volumes:
+      - ./clickhouse_23_12/data:/var/lib/clickhouse
+    ports:
+      - 8123:8123
+      - 9000:9000
+      - 9044:9004
