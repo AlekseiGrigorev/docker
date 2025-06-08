@@ -6,3 +6,5 @@ RUN apt upgrade -y
 # Install packages 
 RUN apt install mc -y
 RUN apt install ncdu -y
+RUN apt install htop -y
+RUN apt install tmux -y

@@ -9,6 +9,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Install packages 
 RUN apk add mc
 RUN apk add ncdu
+RUN apk add htop
+RUN apk add tmux
 
 # Install packages for Authorization
 RUN apk add sqlite sqlite-dev sqlite-libs nodejs npm
