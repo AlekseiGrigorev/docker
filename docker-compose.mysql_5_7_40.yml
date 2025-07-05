@@ -17,4 +17,4 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./mysql_5_7_40/data:/var/lib/mysql
+      - ./mysql_5_7_40/data:/var/lib/mysql:rw

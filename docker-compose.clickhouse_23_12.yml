@@ -8,8 +8,8 @@ services:
       context: ./clickhouse_23_12  # Dockerfile dir path
       dockerfile: Dockerfile  # Dockerfile name (by default "Dockerfile")
     volumes:
-      - ./clickhouse_23_12/data:/var/lib/clickhouse
+      - ./clickhouse_23_12/data:/var/lib/clickhouse:rw
     ports:
       - 8123:8123
       - 9000:9000
-      - 9044:9004
+      - 9004:9004
