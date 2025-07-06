@@ -1,5 +1,5 @@
 # docker-compose.clickhouse_23_12.yaml
-# docker compose -f "docker-compose.clickhouse_23_12.yaml" up -d --build
+# docker compose -f "docker-compose.clickhouse_23_12.yml" up -d --build
 
 services:
   clickhouse_23_12:
