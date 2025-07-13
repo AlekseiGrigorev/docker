@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<psalm
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config https://getpsalm.org/schema/config.xsd"
+	errorLevel="1" findUnusedCode="true" findUnusedBaselineEntry="true">
+  <projectFiles>
+    <directory name="./app" />
+	<ignoreFiles>
+		<directory name=".git" />
+		<directory name=".gitlab" />
+		<directory name=".idea" />
+		<directory name=".phan" />
+		<directory name=".sql" />
+		<directory name=".tmp" />
+		<directory name=".vscode" />
+		<directory name="bin" />
+		<directory name="docker" />
+		<directory name="helm" />
+		<directory name="node_modules" />
+		<directory name="public" />
+		<directory name="resources" />
+		<directory name="storage" />
+		<directory name="vendor" />
+		<file name="./app/Classes/Macro/Synchronizers/DealsSync.php" />
+		<file name="./app/Services/Normalizer/Directories/names.php" />
+	</ignoreFiles>
+  </projectFiles>
+</psalm>
