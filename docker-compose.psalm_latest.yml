@@ -1,0 +1,13 @@
+# docker-compose.psalm_latest.yml
+# docker compose -f "docker-compose.psalm_latest.yml" up -d --build
+# https://psalm.dev/docs/running_psalm/installation/
+# docker run -v $PWD:/app --rm -it ghcr.io/danog/psalm:latest /composer/vendor/bin/psalm --no-cache
+
+services:
+  psalm:
+    image: ghcr.io/danog/psalm:latest
+    command: sh
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./psalm/app:/app
