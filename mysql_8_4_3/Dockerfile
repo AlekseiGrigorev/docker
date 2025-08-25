@@ -5,6 +5,7 @@ RUN microdnf update
 RUN microdnf install mc
 RUN microdnf install ncdu
 RUN microdnf install htop
+RUN microdnf install atop
 RUN microdnf install tmux
 
 COPY ./my.cnf /etc/mysql/conf.d/

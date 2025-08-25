@@ -7,4 +7,5 @@ RUN apk upgrade
 RUN apk add mc
 RUN apk add ncdu
 RUN apk add htop
+RUN apk add atop
 RUN apk add tmux
