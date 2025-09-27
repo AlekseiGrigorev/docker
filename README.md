@@ -18,11 +18,15 @@ MySQL 8.4.3
 
 Container with an interface for viewing Laravel application logs
 
-See https://log-viewer.opcodes.io/docs/3.x/
+See <https://log-viewer.opcodes.io/docs/3.x/>
 
-See https://github.com/opcodesio/log-viewer
+See <https://github.com/opcodesio/log-viewer>
 
-See https://packagist.org/packages/opcodesio/log-viewer
+See <https://packagist.org/packages/opcodesio/log-viewer>
+
+## docker-compose.qdrant.yml
+
+qdrant container. For Kilo Code index database, fore example.
 
 ## Problems
 

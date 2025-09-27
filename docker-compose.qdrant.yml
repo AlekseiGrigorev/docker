@@ -1,0 +1,13 @@
+# docker-compose.qdrant.yaml
+# docker compose -f "docker-compose.qdrant.yml" up -d --build
+
+services:
+  qdrant:
+    build:
+      context: ./qdrant
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '6333:6333'
+    volumes:
+      - ./qdrant/data:/qdrant/storage

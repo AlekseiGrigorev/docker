@@ -6,3 +6,5 @@
 /phpdoc/data
 /phpdoc/app
 /clickhouse_23_12/data
+/qdrant/data
+/.vscode
